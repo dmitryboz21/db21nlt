@@ -60,7 +60,20 @@
 	left: 0;
 	top: 0;
 
-	background: linear-gradient(180deg, rgba(43, 42, 41, 0.5) 0%, rgba(43, 42, 41, 0) 100%);
+	//background: linear-gradient(180deg, rgba(43, 42, 41, 0.5) 0%, rgba(43, 42, 41, 0) 100%);
+	&--dark{
+		.sh-menu__a{
+			color: #2B2A29;
+
+		}
+		.lang-switcher__current svg path{
+			fill: #2B2A29;
+		}
+		.lang-switcher,.lang-switcher__item{
+			color: #2B2A29;
+
+		}
+	}
 }
 
 .sh-container {
@@ -211,3 +224,8 @@
 }
 
 
+.header-ph{
+	height: 160px;
+	display: block;
+	width: 100%;
+}

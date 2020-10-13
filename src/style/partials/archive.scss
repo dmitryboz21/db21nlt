@@ -1,0 +1,56 @@
+.archive-page-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.archive-title {
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 110%;
+	color: #2B2A29;
+}
+
+.archive-categories {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 12px;
+
+
+}
+
+.archive-cat-item {}
+
+.section-archive {
+	margin-top: 23px;
+}
+
+.articles-wrap {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 1150px;
+	max-width: 100%;
+	margin-bottom: -5px;
+}
+
+.article-card-archive {
+	width: calc(50% - 35px);
+	margin-bottom: 50px;
+}
+
+
+.projects-wrap {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 50px -15px 15px;
+
+}
+
+.archive-project-card {
+	margin: 0 15px 30px;
+	width: calc(33.33% - 30px);
+}

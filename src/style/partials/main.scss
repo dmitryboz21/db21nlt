@@ -61,14 +61,6 @@ button {
 	appearance: none;
 }
 
-.btn {}
-
-.btn--black {}
-
-.btn--orange {}
-
-.first-section {}
-
 .first-section {
 	overflow: hidden;
 	position: relative;
@@ -148,6 +140,8 @@ button {
 }
 
 .btn {
+	border: none;
+	outline: none;
 	cursor: pointer;
 	display: inline-flex;
 	align-items: center;
@@ -362,6 +356,8 @@ button {
 	border: 1px solid #EEEEEE;
 	box-sizing: border-box;
 	padding: 29px;
+	display: flex;
+	flex-direction: column;
 
 	&__pic {
 		width: 100%;
@@ -393,6 +389,7 @@ button {
 	}
 
 	&__excerpt {
+		flex-grow: 1;
 		font-size: 18px;
 		line-height: 115%;
 		color: #727271;

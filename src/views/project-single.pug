@@ -1,0 +1,100 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+		headerClass =  'site-header--dark' ;
+		shLogo='img/logo-dark-text.svg';
+
+
+
+
+block main
+	.header-ph
+
+
+	section.section-archive
+		.container
+			.archive-page-top
+				h1.archive-title Освещение супермаркета “Бегемаг” г. Кемерово, ТЦ “Я”
+
+			.post-content
+				img(src="images/single.jpg", alt="")
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa aliquam vestibulum egestas adipiscing justo. Cursus est orci, proin ultrices. Sed scelerisque tempus malesuada amet non. Facilisi amet convallis in elementum non.
+				p Neque, nibh tellus, vestibulum eget sollicitudin sed quis dolor. Etiam aliquam penatibus orci tellus pretium integer. Aliquet massa elit diam a hendrerit luctus venenatis ultricies nunc. Mollis at proin pulvinar euismod. Lacus consectetur quisque accumsan vel sit sit tempor. Turpis vel eget vel, diam massa turpis leo. At aliquam eget id eget sit ut urna. Vel proin nisl, lacinia sagittis cursus turpis ut. Morbi semper mauris imperdiet felis aliquet porttitor vitae. A quam ullamcorper risus id. Fames pretium lorem ut odio nulla scelerisque. Senectus adipiscing arcu, vitae praesent ipsum. Ac varius imperdiet interdum bibendum ac. Aliquet massa quam turpis pellentesque malesuada ornare tristique nibh et.
+				p Dignissim in sed facilisi orci dictum scelerisque in quis. Praesent gravida nisl sit facilisis nullam sollicitudin. Id mi sit at risus. Sed euismod vestibulum, vel vel nibh non. Quisque etiam nisl netus in. Sapien a ultrices tortor, ut eleifend potenti vitae. Nibh placerat sed velit eu volutpat non, eget. Scelerisque ornare vestibulum, nisl, pellentesque eu elementum sem volutpat a. Eros, nunc dignissim et nulla viverra accumsan ipsum massa. Aenean feugiat enim sit facilisis ut ultrices morbi in. Id nec, sit volutpat tristique sed non orci, nisl. Sit convallis fringilla lacus etiam interdum risus. Sed cras amet congue amet, magna pellentesque amet, est, tortor. Nisl eu eu posuere tempus, eget.
+				p Et vitae bibendum netus amet. Imperdiet libero fames ridiculus a porttitor id augue. Pellentesque rutrum et amet mattis in ut. Ante congue justo amet, leo. Diam non mollis non pulvinar mattis tristique. Scelerisque nunc aliquet tellus scelerisque commodo. Enim tellus nunc cursus ultricies. Nec nunc eu quam id ultrices vitae interdum nam.
+				p Cras faucibus in imperdiet eu vehicula sit. Et ornare quis vulputate condimentum ipsum. Orci arcu pellentesque dis malesuada id feugiat. Adipiscing suscipit phasellus eget egestas eget. Ultricies viverra venenatis diam felis tellus nibh. Gravida eget massa vitae at phasellus semper sodales. Tortor etiam nam tempor aliquam. Sed sit ultrices eu praesent. In curabitur sit eu nulla sed dolor tincidunt dignissim pulvinar.
+
+			.share
+				.share__title  Поделиться
+				.share__flex
+					a.share__item(href="" style="background:#4D76A1;")
+						img(src="img/share/vk.svg", alt="")
+					a.share__item(href="" style="background:#3B5998;")
+						img(src="img/share/fb.svg", alt="")
+					a.share__item(href="" style="background:#55ACEE;")
+						img(src="img/share/tw.svg", alt="")
+					a.share__item(href="" style="background:#6A453B;")
+						img(src="img/share/inst.svg", alt="")
+
+			.main-slider-wrap.main-slider-wrap--single
+				.mslider.mslider--projects.js-mslider-projects.slider-dots-style
+					.mslide.mslider-project-cat1
+						.blog-item
+							.blog-item__pic
+								img(src="images/blog1.jpg", alt="")
+							h3.blog-item__title Проект
+							.blog-item__excerpt Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это космос; собрание новейших со всего...
+							a.blog-item__btn.btn.btn--white.btn--h40.btn--w200(href="") Смотреть
+					.mslide.mslider-project-cat3
+						.blog-item
+							.blog-item__pic
+								img(src="images/blog1.jpg", alt="")
+							h3.blog-item__title Проект
+							.blog-item__excerpt Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это космос; собрание новейших со всего...
+							a.blog-item__btn.btn.btn--white.btn--h40.btn--w200(href="") Смотреть
+					.mslide.mslider-project-cat1
+						.blog-item
+							.blog-item__pic
+								img(src="images/blog1.jpg", alt="")
+							h3.blog-item__title Проект
+							.blog-item__excerpt Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это космос; собрание новейших со всего...
+							a.blog-item__btn.btn.btn--white.btn--h40.btn--w200(href="") Смотреть
+					.mslide.mslider-project-cat2
+						.blog-item
+							.blog-item__pic
+								img(src="images/blog1.jpg", alt="")
+							h3.blog-item__title Проект
+							.blog-item__excerpt Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это космос; собрание новейших со всего...
+							a.blog-item__btn.btn.btn--white.btn--h40.btn--w200(href="") Смотреть
+					.mslide.mslider-project-cat2
+						.blog-item
+							.blog-item__pic
+								img(src="images/blog1.jpg", alt="")
+							h3.blog-item__title Проект
+							.blog-item__excerpt Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это космос; собрание новейших со всего...
+							a.blog-item__btn.btn.btn--white.btn--h40.btn--w200(href="") Смотреть
+					.mslide.mslider-project-cat2
+						.blog-item
+							.blog-item__pic
+								img(src="images/blog1.jpg", alt="")
+							h3.blog-item__title Проект
+							.blog-item__excerpt Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это космос; собрание новейших со всего...
+							a.blog-item__btn.btn.btn--white.btn--h40.btn--w200(href="") Смотреть
+					.mslide.mslider-project-cat2
+						.blog-item
+							.blog-item__pic
+								img(src="images/blog1.jpg", alt="")
+							h3.blog-item__title Проект
+							.blog-item__excerpt Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это космос; собрание новейших со всего...
+							a.blog-item__btn.btn.btn--white.btn--h40.btn--w200(href="") Смотреть
+
+
+	section.section-get-book
+		.container.container--1228.container-get-book
+			.get-book
+				h2.h2-get-book Хотите чтобы свет в магазине приносил больше прибыли?  <br>  Получите книгу бесплатно
+				a.btn.btn--orange.btn--get-book Получить книгу

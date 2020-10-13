@@ -1,0 +1,33 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+	section.contacts-page
+		.container.container--contacts
+			h1.contacts-title Контакты
+			.contacts-main
+				form(action="")
+					.contacts-form-title Оставьте заявку и я свяжусь с Вами!
+					.contacts-form-inner
+						.contacts-form-row
+							input.cinp(type="text", name="" placeholder="Имя")
+						.contacts-form-row
+							input.cinp(type="email", name="" placeholder="Электронная почта")
+						.contacts-form-row
+							button.btn.btn--orange.btn--contacts-form(type="submit") Оставить заявку
+			.contacts-bottom
+				a.contacts-bottom__item(href="") +7 999 999 99 99
+				a.contacts-bottom__item(href="") xxxxxxxxx@mail.com
+
+
+
+
+block footer
