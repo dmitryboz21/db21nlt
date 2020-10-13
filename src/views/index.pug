@@ -1,0 +1,175 @@
+extends layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'index.html'
+		};
+
+
+
+
+block main
+	#preloader(style="display: none;")
+		.preloader-inner
+			include ../img/logo.svg
+	.first-section
+		img.first-section__bg(src="images/bg-fs.jpg", alt="")
+		.first-section__light-wrap
+			.container.first-section__light-container
+				img.first-section__light(src="img/light.svg", alt="")
+
+		.container.first-section-container
+			.fs-content
+				h1.fs-h1 Меня зовут Михаил Гусманов. Я 15 лет превращаю свет в&nbsp;помощника бизнесу
+				.fs-text
+					p Хотите, чтоб в вашем бизнесе свет продавал? В книге я рассказал как это сделать
+				a.btn.fs-btn(href="")
+					span Получить книгу
+
+	section.section.section--white
+		.container.container--1228.container-flex
+			h2.section-top-h2 Проекты
+			.section-content
+				.main-slider-wrap
+					.mslider-filters
+						.mslider-filter.mslider-filter--active(data-mslider-projects-filter="all") Все
+						.mslider-filter(data-mslider-projects-filter="mslider-project-cat1") Фэшн - ритеил
+						.mslider-filter(data-mslider-projects-filter="mslider-project-cat2") DIY
+						.mslider-filter(data-mslider-projects-filter="mslider-project-cat3") Фуд - ритеил
+					.mslider.mslider--projects.js-mslider-projects.slider-dots-style
+						.mslide.mslider-project-cat1
+							.blog-item
+								.blog-item__pic
+									img(src="images/blog1.jpg", alt="")
+								h3.blog-item__title Проект
+								.blog-item__excerpt Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это космос; собрание новейших со всего...
+								a.blog-item__btn.btn.btn--white.btn--h40.btn--w200(href="") Смотреть
+						.mslide.mslider-project-cat3
+							.blog-item
+								.blog-item__pic
+									img(src="images/blog1.jpg", alt="")
+								h3.blog-item__title Проект
+								.blog-item__excerpt Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это космос; собрание новейших со всего...
+								a.blog-item__btn.btn.btn--white.btn--h40.btn--w200(href="") Смотреть
+						.mslide.mslider-project-cat1
+							.blog-item
+								.blog-item__pic
+									img(src="images/blog1.jpg", alt="")
+								h3.blog-item__title Проект
+								.blog-item__excerpt Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это космос; собрание новейших со всего...
+								a.blog-item__btn.btn.btn--white.btn--h40.btn--w200(href="") Смотреть
+						.mslide.mslider-project-cat2
+							.blog-item
+								.blog-item__pic
+									img(src="images/blog1.jpg", alt="")
+								h3.blog-item__title Проект
+								.blog-item__excerpt Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это космос; собрание новейших со всего...
+								a.blog-item__btn.btn.btn--white.btn--h40.btn--w200(href="") Смотреть
+
+	section.section.section--dark.section--about-me
+		.container.container--1228.container-flex
+			h2.section-top-h2 Обо мне
+			.section-content
+				.about-me-flex
+					.about-me-text
+						h2  Почему со мной  <span>стоит работать?</span>
+						p Будем знакомы. Мое имя - Михаил Гусманов. Статус: международный эксперт-практик в области светодиодного освещения в сфере-retail.
+						p Более 15 лет я успешно работаю в сфере создания концептов осведения в retail. Сотрудничаю с компаниями мирового и федерального уровня, консультирую ТВ-проекты, посвященные дизайну и ремонту.
+						.about-me-quote “Знаю, как с помощью освещения привлечь клиентов и поднять продажи. Стремлюсь к совершенству в своем деле”
+
+					.about-me-slider-wrap
+						.about-me-slider.js-about-me-slider.slider-dots-style
+							.about-me-slide
+								img(src="images/about-me.jpg", alt="")
+							.about-me-slide
+								img(src="images/about-me.jpg", alt="")
+							.about-me-slide
+								img(src="images/about-me.jpg", alt="")
+
+
+
+	section.section.section--white
+		.container.container-flex
+			h2.section-top-h2 Статьи
+			.section-content
+				.main-slider-wrap.main-slider-wrap--blog
+					.mslider-filters
+						.mslider-filter(data-mslider-blog-filter="all") Все
+						.mslider-filter(data-mslider-blog-filter="mslider-blog-cat1") Фэшн - ритеил
+						.mslider-filter(data-mslider-blog-filter="mslider-blog-cat2") DIY
+						.mslider-filter(data-mslider-blog-filter="mslider-blog-cat3") Фуд - ритеил
+					.mslider.js-mslider-blog.mslider--blog.slider-dots-style
+						.mslide.mslide--blog.mslider-blog-cat1
+							.article-card
+								.article-card__img
+									img(src="images/article-card.jpg", alt="")
+								.article-card__block
+									h3.article-card__title СМИ Заголовок
+									.article-card__excerpt Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это косм...
+									.article-card__btn-wrap
+										a.article-card__btn.btn.btn--white.btn--h40.btn--w200(href="") Читать
+						.mslide.mslide--blog.mslider-blog-cat2
+							.article-card
+								.article-card__img
+									img(src="images/article-card.jpg", alt="")
+								.article-card__block
+									h3.article-card__title СМИ Заголовок
+									.article-card__excerpt Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это косм...
+									.article-card__btn-wrap
+										a.article-card__btn.btn.btn--white.btn--h40.btn--w200(href="") Читать
+						.mslide.mslide--blog.mslider-blog-cat1
+							.article-card
+								.article-card__img
+									img(src="images/article-card.jpg", alt="")
+								.article-card__block
+									h3.article-card__title СМИ Заголовок
+									.article-card__excerpt Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это косм...
+									.article-card__btn-wrap
+										a.article-card__btn.btn.btn--white.btn--h40.btn--w200(href="") Читать
+						.mslide.mslide--blog.mslider-blog-cat2
+							.article-card
+								.article-card__img
+									img(src="images/article-card.jpg", alt="")
+								.article-card__block
+									h3.article-card__title СМИ Заголовок
+									.article-card__excerpt Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это косм...
+									.article-card__btn-wrap
+										a.article-card__btn.btn.btn--white.btn--h40.btn--w200(href="") Читать
+
+
+						.mslide.mslide--blog.mslider-blog-cat3
+							.article-card
+								.article-card__img
+									img(src="images/article-card.jpg", alt="")
+								.article-card__block
+									h3.article-card__title СМИ Заголовок
+									.article-card__excerpt Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это косм...
+									.article-card__btn-wrap
+										a.article-card__btn.btn.btn--white.btn--h40.btn--w200(href="") Читать
+						.mslide.mslide--blog.mslider-blog-cat3
+							.article-card
+								.article-card__img
+									img(src="images/article-card.jpg", alt="")
+								.article-card__block
+									h3.article-card__title СМИ Заголовок
+									.article-card__excerpt Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это косм...
+									.article-card__btn-wrap
+										a.article-card__btn.btn.btn--white.btn--h40.btn--w200(href="") Читать
+						.mslide.mslide--blog.mslider-blog-cat1
+							.article-card
+								.article-card__img
+									img(src="images/article-card.jpg", alt="")
+								.article-card__block
+									h3.article-card__title СМИ Заголовок
+									.article-card__excerpt Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это косм...
+									.article-card__btn-wrap
+										a.article-card__btn.btn.btn--white.btn--h40.btn--w200(href="") Читать
+
+
+
+	section.section-get-book
+		.container.container--1228.container-get-book
+			.get-book
+				h2.h2-get-book Хотите чтобы свет в магазине приносил больше прибыли?  <br>  Получите книгу бесплатно
+				a.btn.btn--orange.btn--get-book Получить книгу

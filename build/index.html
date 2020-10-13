@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta property="og:image" content="images/logo.svg">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+    <!--title= `${page.title}`-->
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container sh-container">
+        <div class="sh-logo-wrap"><img class="sh-logo" src="img/logo.svg" alt=""></div>
+        <div class="sh-menu-wrap">
+          <ul class="sh-menu">
+            <li class="sh-menu__item"><a class="sh-menu__a" href="">ГЛАВНАЯ</a></li>
+            <li class="sh-menu__item"><a class="sh-menu__a" href="">ПРОЕКТЫ</a></li>
+            <li class="sh-menu__item"><a class="sh-menu__a" href="">ОБО МНЕ</a></li>
+            <li class="sh-menu__item"><a class="sh-menu__a" href="">CТАТЬИ</a></li>
+            <li class="sh-menu__item"><a class="sh-menu__a" href="">КОНТАКТЫ</a></li>
+          </ul>
+        </div>
+        <div class="lang-switcher">
+          <div class="lang-switcher__current"><span>RUS</span> <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 5"><path d="M6 5L11.1962.5H.803848L6 5z" fill="#ffffff"/></svg></div>
+          <div class="lang-switcher-items"><a class="lang-switcher__item" href="">ENG</a><a class="lang-switcher__item" href="">ESP</a></div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div id="preloader" style="display: none;">
+        <div class="preloader-inner"><svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155 115">
+  <path class="logo-bg" fill-rule="evenodd" clip-rule="evenodd" d="M154.059 92.9245L.848145 92.9238 26.0001 0 154.059 92.9245z" fill="url(#paint0_linear)"/>
+  <path class="logo-t-shadow" fill-rule="evenodd" clip-rule="evenodd" d="M120.543 68.5581H89.6572l1.6765 4.3044h10.9633l18.339 20.0493h18.801l-25.945-20.0493h12.948l-5.897-4.3044z" fill="#EC801A"/>
+  <path class="logo-t" fill-rule="evenodd" clip-rule="evenodd" d="M120.601 78.6865h-13.839L95.9444 65.4958h-9.9805l-2.2708-4.3044h26.6939l5.925 4.3044h-10.383l14.672 13.1907z" fill="#FEFEFE"/>
+  <path class="logo-n-shadow" fill-rule="evenodd" clip-rule="evenodd" d="M.848145 92.9242H16.773l10.3845-14.8744 1.3728 14.8617h15.8358l6.2964-24.2677h-9.6144l-3.7805 9.406-3.2286-9.406h-8.7591L.848145 92.9242z" fill="#EC801A"/>
+  <path class="logo-n" fill-rule="evenodd" clip-rule="evenodd" d="M29.0149 61.3014h8.7589l3.2289 6.7381 5.5299-6.7381h8.759l-9.187 17.3849H32.2651l-1.9904-10.6468-11.8492 10.6468H4.73047L29.0149 61.3014z" fill="#FEFEFE"/>
+  <path class="logo-l-shadow" fill-rule="evenodd" clip-rule="evenodd" d="M57.1508 92.9242l7.6133-24.2176 10.2325-.0061-1.1215 16.2075h24.6215l5.1044 8.0165-46.4502-.0003z" fill="#EC801A"/>
+  <path class="logo-l-vert" fill-rule="evenodd" clip-rule="evenodd" d="M50.5759 78.6863l7.6086-17.3849h8.7589l-2.528 17.3849H50.5759z" fill="#FEFEFE"/>
+  <path class="logo-l-hor" fill-rule="evenodd" clip-rule="evenodd" d="M53.5216 72.0372l-2.9457 6.6496h41.5185l-2.8845-6.6496H53.5216z" fill="#FEFEFE"/>
+  <path class="logo-bottom-line" d="M7.31834 111.447H1.01477V99.1714h1.22745v11.1646h5.07612v1.111zm3.25556-10.185H9.34647v-2.0906h1.22743v2.0906zm0 10.185H9.34647v-9.074h1.22743v9.074zm12.0144-1.294c0 1.637-.4591 2.881-1.377 3.733-.7963.741-1.8523 1.111-3.1682 1.111-1.1281 0-2.0986-.301-2.9113-.904-.8129-.603-1.3741-1.413-1.6837-2.43h1.2275c.2986.719.7686 1.277 1.4101 1.675.586.365 1.2329.548 1.9407.548 1.3713 0 2.3223-.492 2.8532-1.476.3208-.598.4809-1.35.4809-2.257v-.497c-.3206.63-.7768 1.122-1.3683 1.476-.5918.354-1.2913.531-2.0985.531-1.3492 0-2.4746-.462-3.3759-1.385-.9012-.924-1.3519-2.038-1.3519-3.343 0-1.338.4452-2.469 1.3355-3.392.8902-.924 1.9989-1.386 3.326-1.386.8293 0 1.5455.169 2.1481.506.6027.338 1.0755.827 1.4183 1.468l.0331-1.758h1.1614v7.78zm-1.1614-3.235c0-1.05-.3456-1.921-1.0367-2.612-.6911-.692-1.5401-1.037-2.5464-1.037-.984 0-1.8054.345-2.4631 1.037-.6582.691-.987 1.545-.987 2.563 0 1.017.3316 1.885.9952 2.604.6635.719 1.5039 1.078 2.5215 1.078 1.0061 0 1.8438-.351 2.5131-1.053.669-.702 1.0034-1.562 1.0034-2.58zm12.2297 4.529h-1.2274v-4.778c0-1.083-.2433-1.921-.73-2.513-.4864-.591-1.2054-.887-2.1562-.887-.7632 0-1.3827.21-1.858.63-.6195.553-.929 1.41-.929 2.572v4.976h-1.2274V99.1714h1.2274v4.5126c.3208-.465.7024-.824 1.1446-1.079.5196-.298 1.1168-.448 1.7916-.448 1.139 0 2.057.343 2.7535 1.029.8075.796 1.2109 1.957 1.2109 3.483v4.778zm7.2205-7.962h-2.1067v7.962h-1.2277v-7.962h-1.8911v-1.112h1.8911v-3.2016h1.2277v3.2016h2.1067v1.112zm3.3219-2.223h-1.2276v-2.0906h1.2276v2.0906zm0 10.185h-1.2276v-9.074h1.2276v9.074zm11.0685 0h-1.2274v-4.778c0-1.083-.2432-1.921-.73-2.513-.4864-.591-1.2052-.887-2.1562-.887-.7632 0-1.3825.21-1.858.63-.6193.553-.9289 1.41-.9289 2.572v4.976h-1.2275v-9.074h1.1611v1.311c.3538-.498.7908-.877 1.3105-1.137s1.0836-.39 1.692-.39c1.1392 0 2.0571.343 2.7537 1.029.8073.796 1.2107 1.957 1.2107 3.483v4.778zm11.9151-1.294c0 1.637-.4592 2.881-1.3771 3.733-.7962.741-1.8522 1.111-3.1682 1.111-1.1281 0-2.0984-.301-2.9113-.904-.8129-.603-1.3741-1.413-1.6836-2.43h1.2275c.2987.719.7686 1.277 1.41 1.675.5861.365 1.2331.548 1.9408.548 1.3714 0 2.3223-.492 2.8532-1.476.3207-.598.481-1.35.481-2.257v-.497c-.3208.63-.7769 1.122-1.3684 1.476-.5917.354-1.2914.531-2.0984.531-1.3492 0-2.4746-.462-3.376-1.385-.9013-.924-1.3519-2.038-1.3519-3.343 0-1.338.4452-2.469 1.3356-3.392.89-.924 1.9988-1.386 3.3259-1.386.8292 0 1.5455.169 2.1482.506.6027.338 1.0754.827 1.4183 1.468l.0329-1.758h1.1615v7.78zm-1.1615-3.235c0-1.05-.3455-1.921-1.0367-2.612-.6911-.692-1.5399-1.037-2.5463-1.037-.984 0-1.8053.345-2.4632 1.037-.658.691-.987 1.545-.987 2.563 0 1.017.3317 1.885.9952 2.604.6635.719 1.504 1.078 2.5215 1.078 1.0062 0 1.8439-.351 2.5132-1.053.669-.702 1.0033-1.562 1.0033-2.58zm15.0456-3.433h-2.256v7.962h-1.2274v-7.962h-1.4101v-1.112h1.4101v-.182c0-.907.2874-1.637.8625-2.19.5751-.5531 1.3658-.8296 2.372-.8296h.2489v1.1116h-.2489c-.2984 0-.5585.033-.7796.099-.8183.244-1.2275.846-1.2275 1.809v.182h2.256v1.112zm11.1352 3.433c0 1.35-.4536 2.478-1.3604 3.385-.9068.907-2.0349 1.36-3.3838 1.36-1.3271 0-2.4498-.453-3.3675-1.36-.9179-.907-1.3771-2.035-1.3771-3.385 0-1.349.4507-2.48 1.3521-3.392.9012-.912 2.0321-1.369 3.3925-1.369 1.3489 0 2.477.454 3.3838 1.361s1.3604 2.04 1.3604 3.4zm-1.2277 0c0-1.028-.3345-1.893-1.0034-2.596-.6694-.702-1.507-1.053-2.5131-1.053-1.0175 0-1.858.348-2.5216 1.045-.6635.697-.9952 1.565-.9952 2.604 0 1.029.3317 1.892.9952 2.588.6636.697 1.5041 1.045 2.5216 1.045 1.0061 0 1.8437-.345 2.5131-1.036.6689-.692 1.0034-1.557 1.0034-2.597zm7.6018-3.516c-.6748 0-1.2499.21-1.7254.63-.5639.498-.8458 1.178-.8458 2.041v5.374h-1.2276v-9.074h1.1612v1.311c.2653-.487.6275-.86 1.0864-1.12.4591-.26.9761-.39 1.5512-.39v1.228zm17.417-.216c0 1.028-.334 1.899-1.003 2.613-.669.713-1.54 1.07-2.613 1.07l3.451 4.578h-1.526l-4.164-5.557h.979c1.172 0 2.062-.227 2.671-.68.652-.487.978-1.2.978-2.14 0-.785-.243-1.416-.73-1.891-.608-.597-1.581-.896-2.919-.896h-2.207v11.164h-1.227V99.1714h3.434c1.548 0 2.737.3316 3.566.9956.874.707 1.31 1.714 1.31 3.019zm11.467 4.164h-8.111c0 .896.337 1.653 1.012 2.273.674.619 1.487.928 2.438.928.697 0 1.327-.185 1.891-.555.564-.371.99-.871 1.277-1.502h1.278c-.365.985-.94 1.759-1.725 2.323-.786.564-1.692.846-2.721.846-1.349 0-2.475-.451-3.376-1.352-.901-.901-1.352-2.032-1.352-3.393 0-1.227.398-2.3 1.195-3.218.895-1.028 2.073-1.543 3.533-1.543 1.581 0 2.787.57 3.616 1.709.697.951 1.045 2.112 1.045 3.484zm-1.327-1.112c-.166-.907-.558-1.628-1.178-2.165-.619-.536-1.338-.804-2.156-.804-.874 0-1.628.274-2.264.821-.636.548-1.032 1.264-1.186 2.148h6.784zm8.299-2.753h-2.107v7.962h-1.228v-7.962h-1.891v-1.112h1.891v-3.2016h1.228v3.2016h2.107v1.112zm11.333 7.962h-1.161v-1.692c-.486.697-1.056 1.2-1.708 1.51-.553.265-1.172.398-1.858.398-1.371 0-2.524-.451-3.459-1.352-.934-.901-1.402-2.054-1.402-3.459 0-1.205.399-2.256 1.195-3.152.907-1.028 2.118-1.543 3.633-1.543.851 0 1.562.152 2.131.457.57.304 1.048.749 1.435 1.335l.033-1.576h1.161v9.074zm-1.161-4.479c0-1.028-.342-1.902-1.028-2.621-.686-.719-1.543-1.078-2.571-1.078-.996 0-1.844.351-2.547 1.053-.702.703-1.053 1.579-1.053 2.63 0 1.017.357 1.871 1.07 2.563.713.691 1.568 1.036 2.563 1.036.984 0 1.825-.348 2.521-1.045.697-.696 1.045-1.542 1.045-2.538zm5.329-5.706h-1.227v-2.0906h1.227v2.0906zm0 10.185h-1.227v-9.074h1.227v9.074zm4.169 0h-1.228V99.1714h1.228v12.2756z" fill="#fff"/>
+  <defs>
+    <linearGradient id="paint0_linear" x1="76.6487" y1="92.9294" x2="78.2588" y2=".00291025" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F59E0D"/>
+      <stop offset=".180392" stop-color="#F8CA29"/>
+      <stop offset=".529412" stop-color="#FBD80A"/>
+      <stop offset="1" stop-color="#FCF645"/>
+    </linearGradient>
+  </defs>
+</svg>
+        </div>
+      </div>
+      <div class="first-section"><img class="first-section__bg" src="images/bg-fs.jpg" alt="">
+        <div class="first-section__light-wrap">
+          <div class="container first-section__light-container"><img class="first-section__light" src="img/light.svg" alt=""></div>
+        </div>
+        <div class="container first-section-container">
+          <div class="fs-content">
+            <h1 class="fs-h1">Меня зовут Михаил Гусманов. Я 15 лет превращаю свет в&nbsp;помощника бизнесу</h1>
+            <div class="fs-text">
+              <p>Хотите, чтоб в вашем бизнесе свет продавал? В книге я рассказал как это сделать</p>
+            </div><a class="btn fs-btn" href=""><span>Получить книгу</span></a>
+          </div>
+        </div>
+      </div>
+      <section class="section section--white">
+        <div class="container container--1228 container-flex">
+          <h2 class="section-top-h2">Проекты</h2>
+          <div class="section-content">
+            <div class="main-slider-wrap">
+              <div class="mslider-filters">
+                <div class="mslider-filter mslider-filter--active" data-mslider-projects-filter="all">Все</div>
+                <div class="mslider-filter" data-mslider-projects-filter="mslider-project-cat1">Фэшн - ритеил</div>
+                <div class="mslider-filter" data-mslider-projects-filter="mslider-project-cat2">DIY</div>
+                <div class="mslider-filter" data-mslider-projects-filter="mslider-project-cat3">Фуд - ритеил</div>
+              </div>
+              <div class="mslider mslider--projects js-mslider-projects slider-dots-style">
+                <div class="mslide mslider-project-cat1">
+                  <div class="blog-item">
+                    <div class="blog-item__pic"><img src="images/blog1.jpg" alt=""></div>
+                    <h3 class="blog-item__title">Проект</h3>
+                    <div class="blog-item__excerpt">Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это космос; собрание новейших со всего...</div><a class="blog-item__btn btn btn--white btn--h40 btn--w200" href="">Смотреть</a>
+                  </div>
+                </div>
+                <div class="mslide mslider-project-cat3">
+                  <div class="blog-item">
+                    <div class="blog-item__pic"><img src="images/blog1.jpg" alt=""></div>
+                    <h3 class="blog-item__title">Проект</h3>
+                    <div class="blog-item__excerpt">Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это космос; собрание новейших со всего...</div><a class="blog-item__btn btn btn--white btn--h40 btn--w200" href="">Смотреть</a>
+                  </div>
+                </div>
+                <div class="mslide mslider-project-cat1">
+                  <div class="blog-item">
+                    <div class="blog-item__pic"><img src="images/blog1.jpg" alt=""></div>
+                    <h3 class="blog-item__title">Проект</h3>
+                    <div class="blog-item__excerpt">Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это космос; собрание новейших со всего...</div><a class="blog-item__btn btn btn--white btn--h40 btn--w200" href="">Смотреть</a>
+                  </div>
+                </div>
+                <div class="mslide mslider-project-cat2">
+                  <div class="blog-item">
+                    <div class="blog-item__pic"><img src="images/blog1.jpg" alt=""></div>
+                    <h3 class="blog-item__title">Проект</h3>
+                    <div class="blog-item__excerpt">Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это космос; собрание новейших со всего...</div><a class="blog-item__btn btn btn--white btn--h40 btn--w200" href="">Смотреть</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--dark section--about-me">
+        <div class="container container--1228 container-flex">
+          <h2 class="section-top-h2">Обо мне</h2>
+          <div class="section-content">
+            <div class="about-me-flex">
+              <div class="about-me-text">
+                <h2> Почему со мной  <span>стоит работать?</span></h2>
+                <p>Будем знакомы. Мое имя - Михаил Гусманов. Статус: международный эксперт-практик в области светодиодного освещения в сфере-retail.</p>
+                <p>Более 15 лет я успешно работаю в сфере создания концептов осведения в retail. Сотрудничаю с компаниями мирового и федерального уровня, консультирую ТВ-проекты, посвященные дизайну и ремонту.</p>
+                <div class="about-me-quote">“Знаю, как с помощью освещения привлечь клиентов и поднять продажи. Стремлюсь к совершенству в своем деле”</div>
+              </div>
+              <div class="about-me-slider-wrap">
+                <div class="about-me-slider js-about-me-slider slider-dots-style">
+                  <div class="about-me-slide"><img src="images/about-me.jpg" alt=""></div>
+                  <div class="about-me-slide"><img src="images/about-me.jpg" alt=""></div>
+                  <div class="about-me-slide"><img src="images/about-me.jpg" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--white">
+        <div class="container container-flex">
+          <h2 class="section-top-h2">Статьи</h2>
+          <div class="section-content">
+            <div class="main-slider-wrap main-slider-wrap--blog">
+              <div class="mslider-filters">
+                <div class="mslider-filter" data-mslider-blog-filter="all">Все</div>
+                <div class="mslider-filter" data-mslider-blog-filter="mslider-blog-cat1">Фэшн - ритеил</div>
+                <div class="mslider-filter" data-mslider-blog-filter="mslider-blog-cat2">DIY</div>
+                <div class="mslider-filter" data-mslider-blog-filter="mslider-blog-cat3">Фуд - ритеил</div>
+              </div>
+              <div class="mslider js-mslider-blog mslider--blog slider-dots-style">
+                <div class="mslide mslide--blog mslider-blog-cat1">
+                  <div class="article-card">
+                    <div class="article-card__img"><img src="images/article-card.jpg" alt=""></div>
+                    <div class="article-card__block">
+                      <h3 class="article-card__title">СМИ Заголовок</h3>
+                      <div class="article-card__excerpt">Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это косм...</div>
+                      <div class="article-card__btn-wrap"><a class="article-card__btn btn btn--white btn--h40 btn--w200" href="">Читать</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mslide mslide--blog mslider-blog-cat2">
+                  <div class="article-card">
+                    <div class="article-card__img"><img src="images/article-card.jpg" alt=""></div>
+                    <div class="article-card__block">
+                      <h3 class="article-card__title">СМИ Заголовок</h3>
+                      <div class="article-card__excerpt">Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это косм...</div>
+                      <div class="article-card__btn-wrap"><a class="article-card__btn btn btn--white btn--h40 btn--w200" href="">Читать</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mslide mslide--blog mslider-blog-cat1">
+                  <div class="article-card">
+                    <div class="article-card__img"><img src="images/article-card.jpg" alt=""></div>
+                    <div class="article-card__block">
+                      <h3 class="article-card__title">СМИ Заголовок</h3>
+                      <div class="article-card__excerpt">Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это косм...</div>
+                      <div class="article-card__btn-wrap"><a class="article-card__btn btn btn--white btn--h40 btn--w200" href="">Читать</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mslide mslide--blog mslider-blog-cat2">
+                  <div class="article-card">
+                    <div class="article-card__img"><img src="images/article-card.jpg" alt=""></div>
+                    <div class="article-card__block">
+                      <h3 class="article-card__title">СМИ Заголовок</h3>
+                      <div class="article-card__excerpt">Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это косм...</div>
+                      <div class="article-card__btn-wrap"><a class="article-card__btn btn btn--white btn--h40 btn--w200" href="">Читать</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mslide mslide--blog mslider-blog-cat3">
+                  <div class="article-card">
+                    <div class="article-card__img"><img src="images/article-card.jpg" alt=""></div>
+                    <div class="article-card__block">
+                      <h3 class="article-card__title">СМИ Заголовок</h3>
+                      <div class="article-card__excerpt">Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это косм...</div>
+                      <div class="article-card__btn-wrap"><a class="article-card__btn btn btn--white btn--h40 btn--w200" href="">Читать</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mslide mslide--blog mslider-blog-cat3">
+                  <div class="article-card">
+                    <div class="article-card__img"><img src="images/article-card.jpg" alt=""></div>
+                    <div class="article-card__block">
+                      <h3 class="article-card__title">СМИ Заголовок</h3>
+                      <div class="article-card__excerpt">Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это косм...</div>
+                      <div class="article-card__btn-wrap"><a class="article-card__btn btn btn--white btn--h40 btn--w200" href="">Читать</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mslide mslide--blog mslider-blog-cat1">
+                  <div class="article-card">
+                    <div class="article-card__img"><img src="images/article-card.jpg" alt=""></div>
+                    <div class="article-card__block">
+                      <h3 class="article-card__title">СМИ Заголовок</h3>
+                      <div class="article-card__excerpt">Побывав на выставке Euroshop 2020 в Дюссельдорфе я с нетерпением жду следующую, которая состоится в 2023 году. Если коротко - это косм...</div>
+                      <div class="article-card__btn-wrap"><a class="article-card__btn btn btn--white btn--h40 btn--w200" href="">Читать</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-get-book">
+        <div class="container container--1228 container-get-book">
+          <div class="get-book">
+            <h2 class="h2-get-book">Хотите чтобы свет в магазине приносил больше прибыли?  <br>  Получите книгу бесплатно</h2><a class="btn btn--orange btn--get-book">Получить книгу</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container foo-container"><a class="foo-logo" href="/"><img src="img/logo-dark-text.svg" alt=""></a>
+        <div class="foo-center">
+          <ul class="foo-menu">
+            <li class="foo-menu-item"><a href="">ПРОЕКТЫ</a></li>
+            <li class="foo-menu-item"><a href="">ОБО МНЕ</a></li>
+            <li class="foo-menu-item"><a href="">СТАТЬИ</a></li>
+            <li class="foo-menu-item"><a href="">КОНТАКТЫ</a></li>
+          </ul>
+          <div class="foo-about-me">Меня зовут Михаил Гусманов.  <br>  Я 15 лет превращаю свет в&nbsp;помощника бизнесу</div>
+        </div>
+        <div class="foo-right">
+          <div class="foo-socials"><a class="foo-socials-item" href=""><img class="foo-socials-item__img" src="img/facebook.svg" alt=""></a><a class="foo-socials-item" href=""><img class="foo-socials-item__img" src="img/instagram.svg" alt=""></a></div>
+          <div class="foo-contacts"><a class="foo-contact-item" href="tel:">+7 999 999 99 99</a><a class="foo-contact-item" href="">xxxxxxxxx@mail.com</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
