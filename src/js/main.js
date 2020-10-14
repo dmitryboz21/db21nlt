@@ -3,7 +3,7 @@
 //= libs/jquery-3.5.1.min.js
 //= libs/jquery.fancybox.min.js
 //= libs/slick.min.js
-//= libs/jquery.blockUI.min.js
+//= libs/hystmodal.min.js
 
 /* my scripts */
 

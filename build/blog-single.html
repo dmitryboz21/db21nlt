@@ -149,6 +149,44 @@
         </div>
       </div>
     </footer>
+    <div class="hystmodal" id="modalGetBook" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window modal-book-wrap" role="dialog" aria-modal="true">
+          <div class="hystmodal__close-custom" data-hystclose=""> <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"> <path d="M27.0713 12.929L12.9292 27.0711M27.0713 27.0711L12.9292 12.929" stroke="#F6A30B" stroke-width="2"/> </svg></div>
+          <div class="modal-book">
+            <div class="modal-book-completed">
+              <div class="modal-title">Отправлено!</div>
+              <div class="modal-completed-text">Выбранная книга отправлена на указанную Вами электронную почту</div>
+            </div>
+            <div class="modal-book-inner">
+              <div class="modal-title">Книга на какую тему Вам наиболее интересна?</div>
+              <div class="modal-inputs">
+                <div class="modal-inputs__row">
+                  <div class="custom-checkbox">
+                    <label>
+                      <input type="checkbox" name=""><span>Фэшн - ритеил</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="modal-inputs__row">
+                  <div class="custom-checkbox">
+                    <label>
+                      <input type="checkbox" name=""><span>Фуд - ритеил</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="modal-inputs__row">
+                  <input class="cinp cinp--light" type="text" name="" placeholder="Электронная почта">
+                </div>
+                <div class="modal-inputs__row">
+                  <button class="btn btn--orange js-modal-send-btn" type="submit">Получить книгу</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
