@@ -196,6 +196,7 @@
 
 	.first-section-container {
 		padding: 0;
+		padding-top: 220px;
 	}
 
 	.fs-content {
@@ -278,10 +279,12 @@
 
 	.h2-get-book {
 		width: 349px;
+		max-width: 100%;
 	}
 
 	.get-book {
 		padding-bottom: 49px;
+		max-width: 100%;
 	}
 
 	.foo-container {
@@ -494,6 +497,11 @@
 
 
 @media screen and (max-width:600px) {
+
+	.fs-h1 {
+		font-size: 22px;
+	}
+
 	.mslider--projects {
 		margin-left: 0;
 
@@ -604,17 +612,37 @@
 	.foo-menu-item+.foo-menu-item {
 		margin-top: 20px;
 	}
-	.foo-about-me{
+
+	.foo-about-me {
 		margin-top: 20px;
 	}
-	.foo-contacts{
+
+	.foo-contacts {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
+
 	.foo-contact-item:not(:first-child) {
 		margin-left: 0;
 		margin-top: 10px;
+	}
+
+	.fs-text {
+		margin-top: 5px;
+		font-size: 16px;
+	}
+
+	.fs-text p {
+		margin-top: 10px;
+	}
+
+	.fs-btn {
+		margin-top: 25px;
+	}
+
+	.fs-content {
+		padding: 20px 20px 35px;
 	}
 }
 
@@ -636,6 +664,38 @@
 
 	.mslider-filters-mob-wrap {
 		top: -24px;
+	}
+}
+
+
+@media screen and (max-width:360px) {
+
+	.about-me-text {
+		margin-top: 0;
+		font-size: 22px;
+
+		h2 {}
+
+		p {
+			margin-top: 10px;
+			font-size: 16px;
+		}
+
+	}
+
+	.about-me-quote {
+		font-size: 16px;
+		padding: 20px;
+	}
+
+	.section-get-book::before {
+		background-position: -48vw 0;
+		background-size: 96% auto;
+	}
+
+	.section-get-book::after {
+		background-position: 42vw 122%;
+		background-size: 96% auto;
 	}
 }
 
