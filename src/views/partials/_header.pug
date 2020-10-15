@@ -1,8 +1,20 @@
-header.site-header(class=''+headerClass)
+header#site-header.site-header(class=''+headerClass)
 	.container.sh-container
 		.sh-logo-wrap
 			img.sh-logo(src=""+shLogo, alt="")
 		.sh-menu-wrap
+			.hystmodal__close-custom.close-mob-menu.js-close-mob-menu
+				|  <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"> <path d="M27.0713 12.929L12.9292 27.0711M27.0713 27.0711L12.9292 12.929" stroke="#F6A30B" stroke-width="2"/> </svg>
+
+			.lang-switcher.lang-switcher-mob-menu
+				.lang-switcher__current
+					span RUS
+					|  <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 5"><path d="M6 5L11.1962.5H.803848L6 5z" fill="#ffffff"/></svg>
+				.lang-switcher-items
+					a.lang-switcher__item(href="") ENG
+					a.lang-switcher__item(href="") ESP
+
+
 			ul.sh-menu
 				li.sh-menu__item
 					a.sh-menu__a(href="") ГЛАВНАЯ
@@ -14,11 +26,13 @@ header.site-header(class=''+headerClass)
 					a.sh-menu__a(href="") CТАТЬИ
 				li.sh-menu__item
 					a.sh-menu__a(href="") КОНТАКТЫ
-		.lang-switcher
+		.lang-switcher.lang-switcher--desktop
 			.lang-switcher__current
 				span RUS
 				|  <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 5"><path d="M6 5L11.1962.5H.803848L6 5z" fill="#ffffff"/></svg>
 			.lang-switcher-items
 				a.lang-switcher__item(href="") ENG
 				a.lang-switcher__item(href="") ESP
+		.menu-open-mob.js-menu-open-mob <svg width="38" height="18" viewBox="0 0 38 18" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="38" height="2" transform="matrix(1 0 0 -1 0 18)" fill="white"/><rect width="30" height="2" transform="matrix(1 0 0 -1 8 10)" fill="white"/><rect width="22" height="2" transform="matrix(1 0 0 -1 16 2)" fill="white"/></svg>
+
 

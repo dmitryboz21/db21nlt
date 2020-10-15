@@ -1,0 +1,104 @@
+
+style(type='text/css').
+
+	#preloader{
+		transition-duration: 1s;
+		opacity: .2s;
+	}
+	#preloader .logo-bottom-line{
+		transition-duration: .3s;
+		opacity: 0;
+	}
+	#preloader .logo-bg{
+		opacity: 0;
+		transition-duration: .05s;
+	}
+	#preloader .logo-shadow{
+		opacity: 0;
+		transition-duration: .011s;
+	}
+	#preloader .sh-logo-wrap{
+		transition-duration: 1s;
+	}
+	#preloader.preloader--light{
+
+	}
+	#preloader.preloader--light-slow .logo-bg,#preloader.preloader--light-slow .logo-shadow{
+		transition-duration: .3s;
+	}
+	#preloader.preloader--light .logo-bg,#preloader.preloader--light .logo-shadow{
+		opacity: 1;
+	}
+	#preloader .logo-bottom-line--show{
+		opacity:1;
+	}
+	#preloader.preloader--hide{
+		opacity:0;
+		pointer-events:none;
+	}
+
+
+
+
+#preloader.preloader(style="position:fixed;background-color: #2B2A29; width:100%; height:100%;left:0; top: 0; z-index:9999;")
+	.preloader-inner
+		.sh-logo-wrap(style="position:absolute;left:50%;top:50%;display:flex;justify-content: center;align-items: center;transform: translate(-50%,-50%);")
+			include ../../img/logo-praloader.svg
+
+
+
+
+script(type='text/javascript').
+	var
+		preloader=document.querySelector("#preloader"),
+		bottomLine=document.querySelector("#preloader .logo-bottom-line"),
+		preloaderLogoWrap=document.querySelector("#preloader .sh-logo-wrap");
+
+
+		;
+		function animPreloader(){
+			setTimeout(function(){
+				preloader.classList.add('preloader--light');
+				setTimeout(function(){
+					preloader.classList.remove('preloader--light');
+					setTimeout(function(){
+						preloader.classList.add('preloader--light');
+						setTimeout(function(){
+							preloader.classList.remove('preloader--light');
+							setTimeout(function(){
+								preloader.classList.add('preloader--light-slow');
+								preloader.classList.add('preloader--light');
+									setTimeout(function(){
+										bottomLine.classList.add('logo-bottom-line--show');
+										setTimeout(function(){
+
+											var	headerLogo=document.querySelector("#site-header .sh-logo-wrap"),
+												headerLogoLeft=headerLogo.offsetLeft,
+												headerLogoTop=headerLogo.offsetTop;
+											preloaderLogoWrap.style.left = headerLogoLeft+'px';
+											preloaderLogoWrap.style.top = headerLogoTop+'px';
+											preloaderLogoWrap.style.transform = 'translate(0,0)';
+												setTimeout(function(){
+													preloader.classList.add('preloader--hide');
+													setTimeout(function(){
+														document.querySelector("#first-section__light").classList.add('first-section__light--show');
+													},1100);
+												},1100);
+										},430);
+									},430);
+							},60);
+						},40);
+					},40);
+				},60);
+			},1020);
+		}
+		if (document.readyState != 'loading'){
+			animPreloader();
+		}
+		else{
+			document.addEventListener("DOMContentLoaded", function(event) {
+				animPreloader();
+			});
+		}
+
+

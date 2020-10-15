@@ -10,21 +10,24 @@ block vars
 
 
 block main
-	#preloader(style="display: none;")
-		.preloader-inner
-			include ../img/logo.svg
+	include ./partials/preloader
+
 	section.first-section
-		img.first-section__bg(src="images/bg-fs.jpg", alt="")
+		picture
+			source(srcset="images/bg-fs-mob.jpg" media="(max-width: 1000px)")
+			source(srcset="images/bg-fs-2.jpg")
+			img.first-section__bg(srcset="images/bg-fs-2.jpg" alt="My default image")
+
 		.first-section__light-wrap
 			.container.first-section__light-container
-				img.first-section__light(src="img/light.svg", alt="")
+				img#first-section__light.first-section__light(src="img/light.svg", alt="")
 
 		.container.first-section-container
 			.fs-content
 				h1.fs-h1 Меня зовут Михаил Гусманов. Я 15 лет превращаю свет в&nbsp;помощника бизнесу
 				.fs-text
 					p Хотите, чтоб в вашем бизнесе свет продавал? В книге я рассказал как это сделать
-				.btn.fs-btn(data-hystmodal="#modalGetBook")
+				.btn.btn--max-tablet-orange.fs-btn(data-hystmodal="#modalGetBook")
 					span Получить книгу
 
 	section.section.section--white
@@ -32,11 +35,13 @@ block main
 			h2.section-top-h2 Проекты
 			.section-content
 				.main-slider-wrap
-					.mslider-filters
-						.mslider-filter.mslider-filter--active(data-mslider-projects-filter="all") Все
-						.mslider-filter(data-mslider-projects-filter="mslider-project-cat1") Фэшн - ритеил
-						.mslider-filter(data-mslider-projects-filter="mslider-project-cat2") DIY
-						.mslider-filter(data-mslider-projects-filter="mslider-project-cat3") Фуд - ритеил
+					.mslider-filters-mob-wrap
+						.mslider-filter-mob-current.js-mslider-filter-mob-current Все
+						.mslider-filters
+							.mslider-filter.mslider-filter--active(data-mslider-projects-filter="all") Все
+							.mslider-filter(data-mslider-projects-filter="mslider-project-cat1") Фэшн - ритеил
+							.mslider-filter(data-mslider-projects-filter="mslider-project-cat2") DIY
+							.mslider-filter(data-mslider-projects-filter="mslider-project-cat3") Фуд - ритеил
 					.mslider.mslider--projects.js-mslider-projects.slider-dots-style
 						.mslide.mslider-project-cat1
 							.blog-item
@@ -94,11 +99,13 @@ block main
 			h2.section-top-h2 Статьи
 			.section-content
 				.main-slider-wrap.main-slider-wrap--blog
-					.mslider-filters
-						.mslider-filter(data-mslider-blog-filter="all") Все
-						.mslider-filter(data-mslider-blog-filter="mslider-blog-cat1") Фэшн - ритеил
-						.mslider-filter(data-mslider-blog-filter="mslider-blog-cat2") DIY
-						.mslider-filter(data-mslider-blog-filter="mslider-blog-cat3") Фуд - ритеил
+					.mslider-filters-mob-wrap
+						.mslider-filter-mob-current.js-mslider-filter-mob-current Все
+						.mslider-filters
+							.mslider-filter.mslider-filter--active(data-mslider-blog-filter="all") Все
+							.mslider-filter(data-mslider-blog-filter="mslider-blog-cat1") Фэшн - ритеил
+							.mslider-filter(data-mslider-blog-filter="mslider-blog-cat2") DIY
+							.mslider-filter(data-mslider-blog-filter="mslider-blog-cat3") Фуд - ритеил
 					.mslider.js-mslider-blog.mslider--blog.slider-dots-style
 						.mslide.mslide--blog.mslider-blog-cat1
 							.article-card
@@ -171,5 +178,5 @@ block main
 	section.section-get-book
 		.container.container--1228.container-get-book
 			.get-book
-				h2.h2-get-book Хотите чтобы свет в магазине приносил больше прибыли?  <br>  Получите книгу бесплатно
+				h2.h2-get-book Хотите чтобы свет в магазине приносил <span>больше</span> прибыли?  <br>  Получите книгу бесплатно
 				a.btn.btn--orange.btn--get-book Получить книгу

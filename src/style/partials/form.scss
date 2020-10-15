@@ -1,17 +1,17 @@
 .contacts-page {
 	position: relative;
-	background: #2B2A29;
 	z-index: 1;
+	background: #2B2A29;
 
 	&::before {
+		position: absolute;
 		z-index: 1;
-		content: '';
+		top: 0;
+		left: 0;
 		display: block;
 		width: 100%;
 		height: 100%;
-		position: absolute;
-		left: 0;
-		top: 0;
+		content: '';
 		background: url(../img/contacts-bg.svg) no-repeat center center;
 		background-size: 1920px auto;
 	}
@@ -20,57 +20,49 @@
 .container--contacts {
 	position: relative;
 	z-index: 2;
-	min-height: 100vh;
-	box-sizing: border-box;
-	padding-top: 160px;
 	display: flex;
+	align-items: center;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: center;
+	box-sizing: border-box;
+	min-height: 100vh;
+	padding-top: 160px;
 }
 
 .contacts-title {
-	margin-top: 20px;
 	display: block;
-	width: 100%;
-	font-size: 35px;
-	line-height: 110%;
 	/* identical to box height, or 39px */
-
 	display: flex;
 	align-items: center;
-
+	width: 100%;
+	margin-top: 20px;
 	color: #FFFFFF;
-
-
+	font-size: 35px;
+	line-height: 110%;
 }
 
 .contacts-main {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
-
-	form {}
-
+	flex-direction: column;
 	margin: 30px 0 18vh;
 
+	form {}
 }
 
 .contacts-form-title {
-	font-size: 35px;
-	line-height: 110%;
 	display: flex;
 	align-items: center;
-
 	color: #FFFFFF;
+	font-size: 35px;
+	line-height: 110%;
 }
 
 .contacts-form-inner {
-	margin: 30px auto 0;
-	width: 300px;
 	display: flex;
 	flex-direction: column;
-
+	width: 300px;
+	margin: 30px auto 0;
 }
 
 .btn--contacts-form {
@@ -78,26 +70,22 @@
 }
 
 .cinp {
-	width: 100%;
 	display: block;
-	height: 40px;
 	box-sizing: border-box;
-	border: 1px solid #CCCCCC;
-
-	font-size: 16px;
-	line-height: 110%;
+	width: 100%;
+	height: 40px;
 	padding: 5px 20px;
-
-	font-size: 16px;
-	line-height: 110%;
-
+	transition-duration: .2;
 	color: #ffffff;
+	border: 1px solid #CCCCCC;
 	background: #2B2A29;
 	background: rgba(43, 42, 41, 0);
-	transition-duration: .2;
+	font-size: 16px;
+	font-size: 16px;
+	line-height: 110%;
+	line-height: 110%;
 
 	&--light {
-
 		color: #2B2A29;
 		background: #ffffff;
 		background: rgba(255, 255, 255, 0);
@@ -110,10 +98,8 @@
 	}
 
 	&::placeholder {
-
 		color: #CCCCCC;
 	}
-
 }
 
 .contacts-form-row {
@@ -121,32 +107,28 @@
 }
 
 .contacts-bottom {
-	width: 510px;
-	max-width: 100%;
-	margin-bottom: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	width: 510px;
+	max-width: 100%;
+	margin-bottom: 60px;
 
 	&__item {
-
+		transition-duration: .2S;
+		color: #FFFFFF;
 		font-size: 18px;
 		line-height: 110%;
-		color: #FFFFFF;
-		transition-duration: .2S;
 
 		&:hover,
 		&:focus {
 			color: #F6A30B;
 		}
 
-
-
 	}
 }
 
 /////////////////////@at-root
-
 
 .hystmodal__shadow {
 	background: #FFFFFF;
@@ -157,27 +139,25 @@
 }
 
 .hystmodal__close-custom {
-
 	position: absolute;
+	top: 0;
+	right: -70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
 	width: 40px;
 	height: 40px;
-	right: -70px;
-	top: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	border: 2px solid #F6A30B;
-	box-sizing: border-box;
 	cursor: pointer;
+	border: 2px solid #F6A30B;
 
 	svg {
-		width: 16px;
-		height: 16px;
 		position: absolute;
-		left: 0;
 		top: 0;
+		left: 0;
+		width: 16px;
 		width: 100%;
+		height: 16px;
 		height: 100%;
 
 		path {}
@@ -185,8 +165,8 @@
 
 	&:hover,
 	&:focus {
-		background: #F6A30B;
 		transition-duration: .2s;
+		background: #F6A30B;
 
 		svg {
 			path {
@@ -197,47 +177,45 @@
 }
 
 .modal-book-wrap {
-	background: none;
 	width: unset;
+	background: none;
 }
 
 .modal-book {
-	z-index: 1;
 	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	box-sizing: border-box;
 	width: 100%;
 	max-width: 360px;
-	background: #ffffff;
 	padding: 30px;
-	box-sizing: border-box;
-	overflow: hidden;
-
+	background: #ffffff;
 }
 
 .modal-book-completed {
-	z-index: 2;
 	position: absolute;
-	left: -100%;
+	z-index: 2;
 	top: 0;
+	left: -100%;
 	display: flex;
+	align-items: center;
 	flex-direction: column;
 	justify-content: space-between;
 	width: 100%;
 	height: 100%;
-	align-items: center;
-	background: #ffffff;
 	//opacity: 0;
 	transition-duration: .3s;
+	background: #ffffff;
 
 	.modal-title {
 		padding: 30px 10px 0;
 	}
 
-
 	&::after {
-		content: '';
 		display: block;
-		height: 12px;
 		width: 100%;
+		height: 12px;
+		content: '';
 		background: #F6A30B;
 	}
 
@@ -248,38 +226,33 @@
 }
 
 .modal-completed-text {
-	font-size: 18px;
-	line-height: 110%;
-	width: 227px;
-	max-width: 100%;
 	/* or 20px */
-
 	display: flex;
 	align-items: center;
-	text-align: center;
-
-	color: #2B2A29;
+	width: 227px;
+	max-width: 100%;
 	padding: 10px;
+	text-align: center;
+	color: #2B2A29;
+	font-size: 18px;
+	line-height: 110%;
 }
 
 .modal-title {
-	font-weight: bold;
-	font-size: 22px;
-	line-height: 110%;
 	/* or 24px */
-
 	display: flex;
 	align-items: center;
 	text-align: center;
-
 	color: #2B2A29;
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 110%;
 }
 
 .modal-book-inner {
 	position: relative;
 	z-index: 1;
 	max-width: 100%;
-
 }
 
 .modal-inputs {
@@ -306,40 +279,78 @@
 	.cinp {
 		&--light {}
 	}
-
 }
 
+label {
+	cursor: pointer;
+}
+
+label.custom-checkbox, .custom-checkbox label{
+	display: inline-flex;
+	&:hover {
+
+		input[type="radio"],
+		input[type="checkbox"] {
+			display: none;
+
+			&+span {
+				color: #F6A30B;
+			}
+
+		}
+	}
+}
 .custom-checkbox {
-	label {}
 
 	input[type="radio"],
 	input[type="checkbox"] {
 		display: none;
 
 		&+span {
+			transition-duration: .2s;
+			position: relative;
+			display: inline-flex;
+			/* or 20px */
 			display: flex;
 			align-items: center;
-
+			align-items: center;
+			padding-left: 46px;
+			color: #2B2A29;
 			font-size: 18px;
 			line-height: 110%;
-			/* or 20px */
-
-			display: flex;
-			align-items: center;
-
-			color: #2B2A29;
 
 			&::before {
-				margin-right: 20px;
-				content: '';
+				position: absolute;
+				top: -3px;
+				left: 0;
 				display: block;
+				box-sizing: border-box;
 				width: 26px;
 				height: 26px;
+				content: '';
 				border: 1px solid #F6A30B;
+			}
+
+			&::after {
+				position: absolute;
+				top: 2px;
+				left: 5px;
+				display: block;
 				box-sizing: border-box;
+				width: 16px;
+				height: 16px;
+				content: '';
+				background: #F6A30B;
+				opacity: 0;
+				transition-duration: .2s;
 			}
 		}
 
-		&:checked+span {}
+		&:checked+span {
+			&::after {
+				opacity: 1;
+			}
+		}
 	}
+
 }

@@ -12,7 +12,27 @@ jQuery(function ($) {
 			arrows: false,
 			slidesToShow: 3,
 			// slidesPerRow: 3,
-			slidesToScroll: 3
+			slidesToScroll: 3,
+			responsive: [
+				{
+				  breakpoint: 1000,
+				  settings: {
+					rows: 1,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					variableWidth:true
+				  }
+				}/*,
+				{
+				  breakpoint: 480,
+				  settings: {
+					arrows: false,
+					centerMode: true,
+					centerPadding: '40px',
+					slidesToShow: 1
+				  }
+				}*/
+			  ]
 		}
 	});
 
@@ -26,7 +46,28 @@ jQuery(function ($) {
 			dots: true,
 			arrows: false,
 			slidesPerRow: 2,
-			slidesToScroll: 1
+			slidesToScroll: 1,
+			responsive: [
+				{
+				  breakpoint: 1000,
+				  settings: {
+					rows: 2,
+					slidesPerRow: 1,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					variableWidth:true
+				  }
+				}/*,
+				{
+				  breakpoint: 480,
+				  settings: {
+					arrows: false,
+					centerMode: true,
+					centerPadding: '40px',
+					slidesToShow: 1
+				  }
+				}*/
+			  ]
 		}
 	});
 
@@ -97,6 +138,12 @@ jQuery(function ($) {
 
 				var wrap = $(this).closest('.main-slider-wrap');
 				wrap.height(wrap.height());
+				var mobWrap=$(this).closest('.mslider-filters-mob-wrap');
+				var mobCurrent=mobWrap.find('.mslider-filter-mob-current');
+				if(mobCurrent.length>0){
+					mobWrap.removeClass('mslider-filters-mob-wrap--open');
+					mobCurrent.html($(this).html());
+				}
 			/*	wrap.block({
 					css: {
 						backgroundColor: '#ffffff',

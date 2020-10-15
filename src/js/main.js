@@ -4,6 +4,8 @@
 //= libs/jquery.fancybox.min.js
 //= libs/slick.min.js
 //= libs/hystmodal.min.js
+//= libs/hystmodal.min.js
+//= libs/picturefill.min.js
 
 /* my scripts */
 
