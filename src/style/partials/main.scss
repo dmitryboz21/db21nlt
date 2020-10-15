@@ -102,7 +102,8 @@ button {
 		margin-left: -1px;
 		opacity: 0;
 		transition-duration: 1.2s;
-		&--show{
+
+		&--show {
 			opacity: 1;
 		}
 	}
@@ -114,7 +115,7 @@ button {
 	display: flex;
 	align-items: center;
 	min-height: 100vh;
-    padding: 160px 0 65px;
+	padding: 160px 0 65px;
 }
 
 .first-section-container {}
@@ -758,41 +759,79 @@ button {
 	line-height: 110%;
 	color: #FFFFFF;
 	text-align: center;
-	span{
+
+	span {
 
 		color: #f6a30b;
 	}
 
-	}
+}
 
 .btn--get-book {
 	margin-top: 30px;
 }
 
-picture{
+picture {
 	display: block;
 }
-.close-mob-menu{
+
+.close-mob-menu {
 	display: none;
 }
-.lang-switcher-mob-menu{
-display: none;
+
+.lang-switcher-mob-menu {
+	display: none;
 }
-.lang-switcher-mob-menu{
-	.lang-switcher__current svg path{
+
+.lang-switcher-mob-menu {
+	.lang-switcher__current svg path {
 		fill: #2B2A29;
 	}
-	&.lang-switcher,.lang-switcher__item{
+
+	&.lang-switcher,
+	.lang-switcher__item {
 		color: #2B2A29;
 
 	}
 
 }
 
-.menu-open-mob,.hystmodal__close-custom.close-mob-menu{
+.menu-open-mob,
+.hystmodal__close-custom.close-mob-menu {
 	display: none;
 }
 
-.mslider-filter-mob-current{
+.mslider-filter-mob-current {
 	display: none;
+}
+
+.mslider--projects .slick-slide .mslide {
+	padding-bottom: 35px;
+}
+
+.mslider--projects{
+	.slick-dots{
+		margin-top: -20px;
+		position: relative;
+		z-index: 5;
+	}
+}
+.mslider--projects .slick-slide .blog-item {
+	transition: box-shadow .2s;
+
+	&:hover {
+		box-shadow: 0px 20px 30px -10px rgba(0, 0, 0, 0.25);
+	}
+}
+
+
+@media screen and (min-width:644px){
+	.blog-item.archive-project-card{
+
+	transition: box-shadow .2s;
+
+	&:hover {
+		box-shadow: 0px 20px 30px -10px rgba(0, 0, 0, 0.25);
+	}
+	}
 }
