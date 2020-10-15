@@ -151,6 +151,13 @@
 
 
 
+@media screen and (max-width:1100px) {
+	.article-card-archive {
+		width: calc(50% - 10px);
+
+	}
+}
+
 @media screen and (max-width:1000px) {
 	.mslider--projects {
 		margin: 0 -20px 0 5px;
@@ -323,13 +330,13 @@
 		margin-top: 32px;
 	}
 
-	.projects-wrap{
+	.projects-wrap {
 		display: flex;
 		justify-content: center;
 	}
 
 	/////archive
-	.archive-project-card.blog-item{
+	.archive-project-card.blog-item {
 		width: 728px;
 		padding: 30px;
 		padding-right: 19px;
@@ -337,15 +344,18 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+
 		.blog-item__pic {
-		//	width: 80%;
+			//	width: 80%;
 			display: block;
 			position: relative;
 			width: 80%;
 			max-width: calc(100% - 357px);
-			&::before{
+
+			&::before {
 				display: none;
 			}
+
 			img {
 				position: absolute;
 				left: 0;
@@ -359,13 +369,26 @@
 			}
 		}
 	}
-	.archive-project-cart__info{
+
+	.archive-project-cart__info {
 		width: 100%;
 		max-width: 339px;
 		margin-left: 20px;
-	//	max-width: calc(100% - 340px);
+		//	max-width: calc(100% - 340px);
 
 	}
+
+
+	/////////
+	.articles-wrap{
+		flex-direction: column;
+		align-items: center;
+	}
+	.article-card.article-card-archive{
+		width: 540px;
+		max-width: 100%;
+	}
+
 }
 
 
@@ -382,7 +405,9 @@
 }
 
 @media screen and (max-width:724px) {
-
+	.header-ph{
+		height: 110px;
+	}
 	//Необходимо перейти на моб меню
 	.sh-container {
 		height: 110px;
@@ -540,26 +565,30 @@
 
 
 @media screen and (max-width:643px) {
-	.archive-project-card.blog-item{
+	.archive-project-card.blog-item {
 		padding: 0;
 		border: none;
 		margin-bottom: 50px;
 	}
-	.blog-item__title{
+
+	.blog-item__title {
 		margin-top: 0;
 	}
-	.archive-project-cart__info{
-		margin-left:0;
-		max-width:100%;
+
+	.archive-project-cart__info {
+		margin-left: 0;
+		max-width: 100%;
 	}
-	.archive-project-card.blog-item .blog-item__pic{
+
+	.archive-project-card.blog-item .blog-item__pic {
 		display: none !important;
 	}
 }
 
 
 
-@media screen and (max-width:600px) {//iphone x
+@media screen and (max-width:600px) {
+	//iphone x
 
 	.fs-h1 {
 		font-size: 22px;
@@ -707,11 +736,13 @@
 	.fs-content {
 		padding: 20px 20px 35px;
 	}
+
 	////////
-	.container--contacts{
+	.container--contacts {
 		padding-top: 110px;
 	}
-	.contacts-form-title{
+
+	.contacts-form-title {
 		font-size: 22px;
 		text-align: center;
 		width: 230px;
@@ -719,25 +750,35 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-	.contacts-title{
+
+	.contacts-title {
 		margin-top: 0;
 	}
-	.contacts-bottom{
+
+	.contacts-bottom {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
-	.contacts-bottom__item+.contacts-bottom__item{
+
+	.contacts-bottom__item+.contacts-bottom__item {
 		margin-top: 10px;
 	}
-	.contacts-main{
+
+	.contacts-main {
 		margin: 15px 0;
 	}
-	.contacts-form-inner{
+
+	.contacts-form-inner {
 		margin-top: 20px;
 	}
-	.contacts-bottom{
+
+	.contacts-bottom {
 		margin-bottom: 20px;
+	}
+
+	.archive-title{
+		font-size: 22px;
 	}
 }
 
