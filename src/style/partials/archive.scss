@@ -16,8 +16,17 @@
 	align-items: center;
 	justify-content: flex-end;
 	margin-top: 12px;
-
-
+	position: relative;
+	.mslider-filters-mob-wrap{
+		position: relative;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+	}
+	.mslider-filters{
+		margin-bottom: 0 !important;
+	}
 }
 
 .archive-cat-item {}

@@ -322,6 +322,50 @@
 	.foo-contacts {
 		margin-top: 32px;
 	}
+
+	.projects-wrap{
+		display: flex;
+		justify-content: center;
+	}
+
+	/////archive
+	.archive-project-card.blog-item{
+		width: 728px;
+		padding: 30px;
+		padding-right: 19px;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		.blog-item__pic {
+		//	width: 80%;
+			display: block;
+			position: relative;
+			width: 80%;
+			max-width: calc(100% - 357px);
+			&::before{
+				display: none;
+			}
+			img {
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				-o-object-fit: cover;
+				object-fit: cover;
+				-o-object-position: center center;
+				object-position: center center;
+			}
+		}
+	}
+	.archive-project-cart__info{
+		width: 100%;
+		max-width: 339px;
+		margin-left: 20px;
+	//	max-width: calc(100% - 340px);
+
+	}
 }
 
 
@@ -495,8 +539,27 @@
 }
 
 
+@media screen and (max-width:643px) {
+	.archive-project-card.blog-item{
+		padding: 0;
+		border: none;
+		margin-bottom: 50px;
+	}
+	.blog-item__title{
+		margin-top: 0;
+	}
+	.archive-project-cart__info{
+		margin-left:0;
+		max-width:100%;
+	}
+	.archive-project-card.blog-item .blog-item__pic{
+		display: none !important;
+	}
+}
 
-@media screen and (max-width:600px) {
+
+
+@media screen and (max-width:600px) {//iphone x
 
 	.fs-h1 {
 		font-size: 22px;
@@ -643,6 +706,38 @@
 
 	.fs-content {
 		padding: 20px 20px 35px;
+	}
+	////////
+	.container--contacts{
+		padding-top: 110px;
+	}
+	.contacts-form-title{
+		font-size: 22px;
+		text-align: center;
+		width: 230px;
+		max-width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.contacts-title{
+		margin-top: 0;
+	}
+	.contacts-bottom{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.contacts-bottom__item+.contacts-bottom__item{
+		margin-top: 10px;
+	}
+	.contacts-main{
+		margin: 15px 0;
+	}
+	.contacts-form-inner{
+		margin-top: 20px;
+	}
+	.contacts-bottom{
+		margin-bottom: 20px;
 	}
 }
 
