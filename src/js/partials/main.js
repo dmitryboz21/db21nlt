@@ -37,7 +37,12 @@ $(document).ready(function () {
 	$('.js-mslider-filter-mob-current').click(function(){
 		var mobWrap=$(this).closest('.mslider-filters-mob-wrap');
 		if(mobWrap.length>0){
-			mobWrap.addClass('mslider-filters-mob-wrap--open');
+			if(mobWrap.hasClass('mslider-filters-mob-wrap--open')){
+				mobWrap.removeClass('mslider-filters-mob-wrap--open');
+			}
+			else{
+				mobWrap.addClass('mslider-filters-mob-wrap--open');
+			}
 		}
 	});
 

@@ -57,6 +57,16 @@ jQuery(function ($) {
 					slidesToScroll: 1,
 					variableWidth:true
 				  }
+				},
+				{
+				  breakpoint: 600,
+				  settings: {
+					rows: 1,
+					slidesPerRow: 1,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					variableWidth:true
+				  }
 				}/*,
 				{
 				  breakpoint: 480,
