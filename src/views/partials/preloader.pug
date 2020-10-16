@@ -3,7 +3,7 @@ style(type='text/css').
 
 	#preloader{
 		transition-duration: 1s;
-		opacity: .2s;
+		opacity: 1;
 	}
 	#preloader .logo-bottom-line{
 		transition-duration: .3s;
@@ -82,6 +82,9 @@ script(type='text/javascript').
 													preloader.classList.add('preloader--hide');
 													setTimeout(function(){
 														document.querySelector("#first-section__light").classList.add('first-section__light--show');
+														setTimeout(function(){
+															preloader.style.display='none';
+														},600);
 													},600);
 												},1100);
 										},430);
@@ -92,13 +95,25 @@ script(type='text/javascript').
 				},60);
 			},1020);
 		}
-		if (document.readyState != 'loading'){
-			animPreloader();
+
+		if(!localStorage.getItem('preloaderShown')){
+			localStorage.setItem('preloaderShown', true);
+			if (document.readyState != 'loading'){
+				animPreloader();
+			}
+			else{
+				document.addEventListener("DOMContentLoaded", function(event) {
+					animPreloader();
+				});
+			}
 		}
 		else{
-			document.addEventListener("DOMContentLoaded", function(event) {
-				animPreloader();
-			});
+
+		document.querySelector("#preloader").style.display='unset';
+		document.querySelector("#preloader").style.opacity=0;
+		document.querySelector("#preloader").style.display='none';
 		}
+
+
 
 

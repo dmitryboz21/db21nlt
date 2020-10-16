@@ -232,6 +232,25 @@
 		padding-top: 50px;
 	}
 
+
+
+	.about-me-bg__1 {
+		height: 431px;
+		width: auto;
+		min-height: unset;
+	}
+
+	.about-me-bg__2 {
+		transform: translate(45%, -40%);
+		height: 1067px;
+		min-height: unset;
+
+		&--show {
+			opacity: 0;
+			transform: translate(18%, 0%);
+		}
+	}
+
 	.about-me-flex {
 		display: flex;
 		flex-direction: column;
@@ -380,11 +399,12 @@
 
 
 	/////////
-	.articles-wrap{
+	.articles-wrap {
 		flex-direction: column;
 		align-items: center;
 	}
-	.article-card.article-card-archive{
+
+	.article-card.article-card-archive {
 		width: 540px;
 		max-width: 100%;
 	}
@@ -405,9 +425,10 @@
 }
 
 @media screen and (max-width:724px) {
-	.header-ph{
+	.header-ph {
 		height: 110px;
 	}
+
 	//Необходимо перейти на моб меню
 	.sh-container {
 		height: 110px;
@@ -565,6 +586,11 @@
 
 
 @media screen and (max-width:643px) {
+
+
+	.about-me-bg{
+		display: none;
+	}
 	.archive-project-card.blog-item {
 		padding: 0;
 		border: none;
@@ -777,7 +803,7 @@
 		margin-bottom: 20px;
 	}
 
-	.archive-title{
+	.archive-title {
 		font-size: 22px;
 	}
 }

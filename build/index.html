@@ -39,7 +39,7 @@
       <style type="text/css">
         #preloader{
         	transition-duration: 1s;
-        	opacity: .2s;
+        	opacity: 1;
         }
         #preloader .logo-bottom-line{
         	transition-duration: .3s;
@@ -135,6 +135,9 @@
         												preloader.classList.add('preloader--hide');
         												setTimeout(function(){
         													document.querySelector("#first-section__light").classList.add('first-section__light--show');
+        													setTimeout(function(){
+        														preloader.style.display='none';
+        													},600);
         												},600);
         											},1100);
         									},430);
@@ -145,13 +148,23 @@
         			},60);
         		},1020);
         	}
-        	if (document.readyState != 'loading'){
-        		animPreloader();
+        
+        	if(!localStorage.getItem('preloaderShown')){
+        		localStorage.setItem('preloaderShown', true);
+        		if (document.readyState != 'loading'){
+        			animPreloader();
+        		}
+        		else{
+        			document.addEventListener("DOMContentLoaded", function(event) {
+        				animPreloader();
+        			});
+        		}
         	}
         	else{
-        		document.addEventListener("DOMContentLoaded", function(event) {
-        			animPreloader();
-        		});
+        
+        	document.querySelector("#preloader").style.display='unset';
+        	document.querySelector("#preloader").style.opacity=0;
+        	document.querySelector("#preloader").style.display='none';
         	}
       </script>
       <section class="first-section">
@@ -213,7 +226,8 @@
         </div>
       </section>
       <section class="section section--dark section--about-me" id="about-me">
-        <div class="container container--1228 container-flex">
+        <div class="about-me-bg"><img class="about-me-bg__1" src="img/about-me-art-v2.svg" alt=""><img class="about-me-bg__2" src="img/about-me-art-v2-d.svg" alt=""></div>
+        <div class="container container--1228 container-flex about-me-container">
           <h2 class="section-top-h2">Обо мне</h2>
           <div class="section-content">
             <div class="about-me-flex">
